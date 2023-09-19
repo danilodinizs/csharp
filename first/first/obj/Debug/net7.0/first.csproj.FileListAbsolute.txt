@@ -1,0 +1,15 @@
+C:\temp\projetos\first\first\bin\Debug\net7.0\first.exe
+C:\temp\projetos\first\first\bin\Debug\net7.0\first.deps.json
+C:\temp\projetos\first\first\bin\Debug\net7.0\first.runtimeconfig.json
+C:\temp\projetos\first\first\bin\Debug\net7.0\first.dll
+C:\temp\projetos\first\first\bin\Debug\net7.0\first.pdb
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.csproj.AssemblyReference.cache
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.AssemblyInfoInputs.cache
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.AssemblyInfo.cs
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.csproj.CoreCompileInputs.cache
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.dll
+C:\temp\projetos\first\first\obj\Debug\net7.0\refint\first.dll
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.pdb
+C:\temp\projetos\first\first\obj\Debug\net7.0\first.genruntimeconfig.cache
+C:\temp\projetos\first\first\obj\Debug\net7.0\ref\first.dll
