@@ -10,10 +10,11 @@ namespace first
 {
     internal class Program
     {
-        static void Main(string[] args) {
+        static void Main(string[] args)
+        {
             CultureInfo ci = CultureInfo.InvariantCulture;
 
-            
+
         }
     }
 

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace exercicios
 {
-    internal class Testes {
+    internal class Testes
+    {
         
-        }
     }
+}
