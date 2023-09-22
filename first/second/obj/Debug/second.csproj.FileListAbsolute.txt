@@ -1,0 +1,8 @@
+C:\temp\projetos\first\second\bin\Debug\second.exe.config
+C:\temp\projetos\first\second\bin\Debug\second.exe
+C:\temp\projetos\first\second\bin\Debug\second.pdb
+C:\temp\projetos\first\second\obj\Debug\second.csproj.AssemblyReference.cache
+C:\temp\projetos\first\second\obj\Debug\second.csproj.SuggestedBindingRedirects.cache
+C:\temp\projetos\first\second\obj\Debug\second.csproj.CoreCompileInputs.cache
+C:\temp\projetos\first\second\obj\Debug\second.exe
+C:\temp\projetos\first\second\obj\Debug\second.pdb

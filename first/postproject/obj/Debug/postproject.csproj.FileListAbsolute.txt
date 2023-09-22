@@ -1,0 +1,8 @@
+C:\temp\projetos\first\postproject\bin\Debug\postproject.exe.config
+C:\temp\projetos\first\postproject\bin\Debug\postproject.exe
+C:\temp\projetos\first\postproject\bin\Debug\postproject.pdb
+C:\temp\projetos\first\postproject\obj\Debug\postproject.csproj.AssemblyReference.cache
+C:\temp\projetos\first\postproject\obj\Debug\postproject.csproj.SuggestedBindingRedirects.cache
+C:\temp\projetos\first\postproject\obj\Debug\postproject.csproj.CoreCompileInputs.cache
+C:\temp\projetos\first\postproject\obj\Debug\postproject.exe
+C:\temp\projetos\first\postproject\obj\Debug\postproject.pdb
