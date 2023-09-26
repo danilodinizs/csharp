@@ -1,10 +1,5 @@
-﻿using System;
-using System.Drawing;
-using System.Globalization;
-using System.Runtime.Serialization;
+﻿using System.Globalization;
 using exercicios;
-using System.Collections.Generic;
-using System.Data;
 
 namespace first
 {
@@ -14,68 +9,48 @@ namespace first
         {
             CultureInfo ci = CultureInfo.InvariantCulture;
 
-            Account acc = new Account(1001, "Danilo", 500.00);
-            Account acc1 = new SavingsAccount(1002, "Daniel", 500.00, 0.01);
+            List<Contribuinte> list = new List<Contribuinte>();
 
-            acc.Withdraw(10.0);
-            acc1.Withdraw(10.0);
+            Console.Write("Enter the number of tax payers: ");
+            int n = int.Parse(Console.ReadLine());
+            
+            for (int i = 1; i <= n; i++)
+            {
+                Console.WriteLine($"Tax payer #{i} data: ");
+                Console.Write("Individual or company (i/c)? ");
+                char ic = char.Parse(Console.ReadLine());
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
+                Console.Write("Anual income: ");
+                double anualIncome = double.Parse(Console.ReadLine(), ci);
 
-            Console.WriteLine(acc.Balance);
-            Console.WriteLine(acc1.Balance);
+                if (ic == 'i')
+                {
+                    Console.Write("Health expenditures: ");
+                    double healthEx = double.Parse(Console.ReadLine(), ci);
+                    list.Add(new PessoaFísica(name, anualIncome, healthEx));
+                }
+                else
+                {
+                    Console.Write("Number of employees: ");
+                    int numberOfEmp = int.Parse(Console.ReadLine());
+                    list.Add(new PessoaJurídica(name, anualIncome, numberOfEmp));
+                }
+            }
 
-            //Account acc = new Account(1001, "Danilo", 0.0);
-            //BusinessAccount bAcc = new BusinessAccount(1002, "Daniel", 0.0, 500.0);
+            Console.WriteLine();
 
-            //Account acc1 = bAcc;
-            //Account acc2 = new BusinessAccount(1003, "Davi", 0.0, 300.0);
-            //Account acc3 = new SavingsAccount(1002, "Daniel", 300.0, 0.01);
+            double sum = 0;
+            Console.WriteLine("TAXES PAID: ");
+            foreach (Contribuinte contribuinte in list)
+            {
+                Console.WriteLine(contribuinte.Name + ": $ " + contribuinte.TaxesPaid().ToString("F2", ci));
+                sum += contribuinte.TaxesPaid();
+                
+            }
 
-            //BusinessAccount bAcc1 = (BusinessAccount)acc2;
-            //BusinessAccount bAcc2 = acc2 as BusinessAccount;
-            //Console.WriteLine(bAcc1.LoanLimit.ToString("F2", ci));
-            //Console.WriteLine(bAcc2.LoanLimit.ToString("F2", ci));
-            //bAcc1.Loan(300.0);
-
-            // BusinessAccount bAcc2 = (BusinessAccount)acc3;  erro crasso
-
-            //if (acc3 is BusinessAccount)
-            //{
-            //    BusinessAccount bAcc3 = (BusinessAccount)acc3;
-            //}
-            //else if (acc3 is SavingsAccount)
-            //{
-            //    SavingsAccount sAcc = (SavingsAccount)acc3;
-            //    sAcc.UpdateBalance();
-            //    Console.WriteLine(sAcc.Balance);
-            //    Console.WriteLine("burro burro burro");
-            //}
-
-            //Console.Write("Number: ");
-            //int n = int.Parse(Console.ReadLine());
-            //Console.Write("Holder: ");
-            //string holder = Console.ReadLine();
-            //Console.Write("Balance: ");
-            //double balance = double.Parse(Console.ReadLine(), ci);
-            //Console.Write("Loan Limit: ");
-            //double loanLimit = double.Parse(Console.ReadLine(), ci);
-
-            //BusinessAccount businessAccount = new BusinessAccount(n, holder, balance, loanLimit);
-
-            //Console.Write("Withdraw: ");
-            //double withdraw = double.Parse(Console.ReadLine(), ci);
-            //businessAccount.Withdraw(withdraw);
-            //Console.Write("Deposit: ");
-            //double deposit = double.Parse(Console.ReadLine(), ci);
-            //businessAccount.Depoist(deposit);
-            //Console.Write("Loan: ");
-            //double loan = double.Parse(Console.ReadLine(), ci);
-            //businessAccount.Loan(loan);
-
-            //Console.WriteLine();
-            //Console.WriteLine("Account balance: " + businessAccount.Balance);
-            //Console.WriteLine("Loan limit: " + businessAccount.LoanLimit);
-
+            Console.WriteLine();
+            Console.WriteLine("TOTAL TAXES: $ " + sum.ToString("F2", ci));
         }
     }
-
 }
