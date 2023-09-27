@@ -1,32 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace exercicios
-{
-    internal class PessoaFísica : Contribuinte
-    {
-        public double HealthExpenditures { get; set; }
+//namespace exercicios
+//{
+//    internal class PessoaFísica : Contribuinte
+//    {
+//        public double HealthExpenditures { get; set; }
 
-        public PessoaFísica(string name, double anualIncome, double healthExpenditures)
-            : base(name, anualIncome)
-        {
-            HealthExpenditures = healthExpenditures;
-        }
+//        public PessoaFísica(string name, double anualIncome, double healthExpenditures)
+//            : base(name, anualIncome)
+//        {
+//            HealthExpenditures = healthExpenditures;
+//        }
 
-        public override double TaxesPaid()
-        {
-            if (AnualIncome < 20000)
-            {
-                return (AnualIncome * 0.15) - (HealthExpenditures * 0.5);
+//        public override double TaxesPaid()
+//        {
+//            if (AnualIncome < 20000)
+//            {
+//                return (AnualIncome * 0.15) - (HealthExpenditures * 0.5);
 
-            }
-            else
-            {
-                return (AnualIncome * 0.25) - (HealthExpenditures * 0.5);
-            }
-        }
-    }
-}
+//            }
+//            else
+//            {
+//                return (AnualIncome * 0.25) - (HealthExpenditures * 0.5);
+//            }
+//        }
+//    }
+//}
