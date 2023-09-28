@@ -1,5 +1,6 @@
 ﻿using System.Globalization;
 using exercicios;
+using System.IO;
 
 namespace first
 {
@@ -9,33 +10,49 @@ namespace first
         {
             CultureInfo ci = CultureInfo.InvariantCulture;
 
+            string sourcePath = @"c:\temp\file1.txt";
+            string targetPath = @"c:\temp\file2.txt";
+            string path = @"c:\temp\file1.txt";
+
+            StreamReader sr = null;
             try
             {
-                Console.WriteLine("Enter account data");
-                Console.Write("Number: ");
-                int number = int.Parse(Console.ReadLine());
-                Console.Write("Holder: ");
-                string holder = Console.ReadLine();
-                Console.Write("Initial balance: ");
-                double balance = double.Parse(Console.ReadLine(), ci);
-                Console.Write("Withdraw limit: ");
-                double withdrawLimit = double.Parse(Console.ReadLine(), ci);
+                //FileInfo fileInfo = new FileInfo(sourcePath);
+                //fileInfo.CopyTo(targetPath);
+                //string[] lines = File.ReadAllLines(sourcePath);
+                //foreach (string line in lines)
+                //{
+                //    Console.WriteLine(line);
+                //}
 
-                AccountwEx acc = new AccountwEx(number, holder, balance, withdrawLimit);
+                //Console.WriteLine("=======================");
 
-                Console.WriteLine();
-                Console.Write("Enter amount for withdraw: ");
-                double withdraw = double.Parse(Console.ReadLine(), ci);
+                //sr = File.OpenText(path);
+                //while (!sr.EndOfStream)
+                //{
+                //    string line1 = sr.ReadLine();
 
-                acc.Withdraw(withdraw);
+                //   Console.WriteLine(line1);
+                //}
+                Console.WriteLine("========================");
 
-                Console.WriteLine("New balance: " + acc.Balance.ToString("F2", ci));
+                using (StreamReader sr1 = File.OpenText(path))
+                    while (!sr1.EndOfStream)
+                    {
+                        string line1 = sr.ReadLine();
+                        Console.WriteLine(line1);
+                    }
+
             }
-            catch (DomainException e) 
+            catch (IOException e)
             {
-                Console.WriteLine("Withdraw error: " + e.Message);
+                Console.WriteLine("An error ocurred!");
+                Console.WriteLine(e.Message);
             }
-
+            finally
+            {
+                if (sr != null) sr.Close();
+            }
 
         }
     }
