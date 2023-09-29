@@ -10,50 +10,40 @@ namespace first
         {
             CultureInfo ci = CultureInfo.InvariantCulture;
 
-            string sourcePath = @"c:\temp\file1.txt";
-            string targetPath = @"c:\temp\file2.txt";
-            string path = @"c:\temp\file1.txt";
+            Console.Write("Enter file full path: ");
+            string sourceFilePath = Console.ReadLine();
 
-            StreamReader sr = null;
             try
             {
-                //FileInfo fileInfo = new FileInfo(sourcePath);
-                //fileInfo.CopyTo(targetPath);
-                //string[] lines = File.ReadAllLines(sourcePath);
-                //foreach (string line in lines)
-                //{
-                //    Console.WriteLine(line);
-                //}
+                string[] lines = File.ReadAllLines(sourceFilePath);
 
-                //Console.WriteLine("=======================");
+                string sourceFolderPath = Path.GetDirectoryName(sourceFilePath);
+                string targetFolderPath = sourceFolderPath + @"\out";
+                string targetFilePath = targetFolderPath + @"\summary.csv";
 
-                //sr = File.OpenText(path);
-                //while (!sr.EndOfStream)
-                //{
-                //    string line1 = sr.ReadLine();
+                Directory.CreateDirectory(targetFolderPath);
 
-                //   Console.WriteLine(line1);
-                //}
-                Console.WriteLine("========================");
-
-                using (StreamReader sr1 = File.OpenText(path))
-                    while (!sr1.EndOfStream)
+                using (StreamWriter sw = File.AppendText(targetFilePath))
+                {
+                    foreach (string line in lines)
                     {
-                        string line1 = sr.ReadLine();
-                        Console.WriteLine(line1);
-                    }
 
+                        string[] fields = line.Split(',');
+                        string name = fields[0];
+                        double price = double.Parse(fields[1], ci);
+                        int quantity = int.Parse(fields[2]);
+
+                        Files prod = new Files(name, price, quantity);
+
+                        sw.WriteLine(prod.Name + "," + prod.FinalPrice().ToString("F2", CultureInfo.InvariantCulture));
+                    }
+                }
             }
             catch (IOException e)
             {
                 Console.WriteLine("An error ocurred!");
                 Console.WriteLine(e.Message);
             }
-            finally
-            {
-                if (sr != null) sr.Close();
-            }
-
         }
     }
 }
