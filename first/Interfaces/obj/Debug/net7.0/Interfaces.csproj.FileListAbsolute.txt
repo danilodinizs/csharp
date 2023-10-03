@@ -1,0 +1,15 @@
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.csproj.AssemblyReference.cache
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.AssemblyInfoInputs.cache
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.AssemblyInfo.cs
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.csproj.CoreCompileInputs.cache
+C:\temp\projetos\first\Interfaces\bin\Debug\net7.0\Interfaces.exe
+C:\temp\projetos\first\Interfaces\bin\Debug\net7.0\Interfaces.deps.json
+C:\temp\projetos\first\Interfaces\bin\Debug\net7.0\Interfaces.runtimeconfig.json
+C:\temp\projetos\first\Interfaces\bin\Debug\net7.0\Interfaces.dll
+C:\temp\projetos\first\Interfaces\bin\Debug\net7.0\Interfaces.pdb
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.dll
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\refint\Interfaces.dll
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.pdb
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\Interfaces.genruntimeconfig.cache
+C:\temp\projetos\first\Interfaces\obj\Debug\net7.0\ref\Interfaces.dll
