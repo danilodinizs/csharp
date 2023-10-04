@@ -13,3 +13,17 @@ C:\temp\projetos\first\first\obj\Debug\net7.0\refint\first.dll
 C:\temp\projetos\first\first\obj\Debug\net7.0\first.pdb
 C:\temp\projetos\first\first\obj\Debug\net7.0\first.genruntimeconfig.cache
 C:\temp\projetos\first\first\obj\Debug\net7.0\ref\first.dll
+C:\temp\projects\csharp\first\first\bin\Debug\net7.0\first.exe
+C:\temp\projects\csharp\first\first\bin\Debug\net7.0\first.deps.json
+C:\temp\projects\csharp\first\first\bin\Debug\net7.0\first.runtimeconfig.json
+C:\temp\projects\csharp\first\first\bin\Debug\net7.0\first.dll
+C:\temp\projects\csharp\first\first\bin\Debug\net7.0\first.pdb
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\first.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\first.AssemblyInfoInputs.cache
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\first.AssemblyInfo.cs
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\first.csproj.CoreCompileInputs.cache
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\first.dll
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\refint\first.dll
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\first.pdb
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\first.genruntimeconfig.cache
+C:\temp\projects\csharp\first\first\obj\Debug\net7.0\ref\first.dll

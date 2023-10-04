@@ -13,3 +13,17 @@ C:\temp\projetos\first\exercicios\bin\Debug\net7.0\exercicios.runtimeconfig.json
 C:\temp\projetos\first\exercicios\bin\Debug\net7.0\exercicios.pdb
 C:\temp\projetos\first\exercicios\obj\Debug\net7.0\exercicios.genruntimeconfig.cache
 C:\temp\projetos\first\exercicios\obj\Debug\net7.0\ref\exercicios.dll
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\exercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\exercicios.AssemblyInfoInputs.cache
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\exercicios.AssemblyInfo.cs
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\exercicios.csproj.CoreCompileInputs.cache
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\exercicios.dll
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\refint\exercicios.dll
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\exercicios.pdb
+C:\temp\projects\csharp\first\exercicios\bin\Debug\net7.0\exercicios.exe
+C:\temp\projects\csharp\first\exercicios\bin\Debug\net7.0\exercicios.deps.json
+C:\temp\projects\csharp\first\exercicios\bin\Debug\net7.0\exercicios.runtimeconfig.json
+C:\temp\projects\csharp\first\exercicios\bin\Debug\net7.0\exercicios.dll
+C:\temp\projects\csharp\first\exercicios\bin\Debug\net7.0\exercicios.pdb
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\exercicios.genruntimeconfig.cache
+C:\temp\projects\csharp\first\exercicios\obj\Debug\net7.0\ref\exercicios.dll
